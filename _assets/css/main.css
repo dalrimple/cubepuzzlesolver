@@ -1,0 +1,145 @@
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../scss/main.scss */
+.cubewrapper {
+  position: relative;
+  -webkit-perspective: 1000px;
+  -webkit-perspective-origin: 50% -210px;
+  width: 1100px;
+  height: 200px;
+  margin: 200px auto;
+}
+
+/* line 15, ../scss/main.scss */
+.cube {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+}
+/* line 21, ../scss/main.scss */
+.cube.one {
+  -webkit-transform: translateX(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+/* line 24, ../scss/main.scss */
+.cube.two {
+  -webkit-transform: translateX(300px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+/* line 27, ../scss/main.scss */
+.cube.three {
+  -webkit-transform: translateX(600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+/* line 30, ../scss/main.scss */
+.cube.four {
+  -webkit-transform: translateX(900px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+/* line 33, ../scss/main.scss */
+.cube .face {
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.3);
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 50px;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+/* line 44, ../scss/main.scss */
+.cube .face.back {
+  -webkit-transform: translateZ(-100px) rotateY(180deg);
+  background-color: rgba(0, 255, 0, 0.7);
+}
+/* line 48, ../scss/main.scss */
+.cube .face.right {
+  -webkit-transform: rotateY(-270deg) translateX(100px);
+  -webkit-transform-origin: top right;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+/* line 53, ../scss/main.scss */
+.cube .face.left {
+  -webkit-transform: rotateY(270deg) translateX(-100px);
+  -webkit-transform-origin: center left;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+/* line 58, ../scss/main.scss */
+.cube .face.top {
+  -webkit-transform: rotateX(-90deg) translateY(-100px);
+  -webkit-transform-origin: top center;
+  background-color: rgba(255, 255, 0, 0.7);
+}
+/* line 63, ../scss/main.scss */
+.cube .face.bottom {
+  -webkit-transform: rotateX(90deg) translateY(100px);
+  -webkit-transform-origin: bottom center;
+  background-color: rgba(0, 255, 255, 0.7);
+}
+/* line 68, ../scss/main.scss */
+.cube .face.front {
+  -webkit-transform: translateZ(100px);
+  background-color: rgba(255, 0, 255, 0.7);
+}
