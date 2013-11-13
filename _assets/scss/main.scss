@@ -34,13 +34,15 @@ $cubecount: 4;
 		position: absolute;
 		background-color: rgba(0, 255, 0, 0.3);
 		// border: 1px solid black;
-		width: $cubewidth;
-		height: $cubewidth;
+		width: $cubewidth - 10;
+		height: $cubewidth - 10;
+		border: 5px solid #FFFFFF;
 		line-height: $cubewidth;
-		font-size: 50px;
-		font-family: Arial;
-		color: white;
+		font-size: 40px;
+		font-family: Helvetica;
+		color: #FFFFFF;
 		text-align: center;
+		text-transform: uppercase;
 		&.back {
 			-webkit-transform: translateZ(-100px) rotateY(180deg);
 			background-color: rgba(0, 255, 0, 0.7);
@@ -56,12 +58,12 @@ $cubecount: 4;
 			background-color: rgba(0, 0, 255, 0.7);
 		}
 		&.top {
-			-webkit-transform: rotateX(-90deg) translateY(-100px);
+			-webkit-transform: rotateX(90deg) translateY(-100px);
 			-webkit-transform-origin: top center;
 			background-color: rgba(255, 255, 0, 0.7);
 		}
 		&.bottom {
-			-webkit-transform: rotateX(90deg) translateY(100px);
+			-webkit-transform: rotateX(-90deg) translateY(100px);
 			-webkit-transform-origin: bottom center;
 			background-color: rgba(0, 255, 255, 0.7);
 		}
